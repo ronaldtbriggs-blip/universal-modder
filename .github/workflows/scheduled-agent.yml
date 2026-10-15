@@ -1,0 +1,39 @@
+name: "⏱️ Antigravity Modder Scheduled Pulse"
+
+on:
+  schedule:
+    # Runs daily at 14:30 UTC (08:30 MDT)
+    - cron: "30 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  daily-pulse:
+    name: "Autonomous Modder KB & Publish Health Check"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Universal Modder Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pyyaml pillow numpy
+
+      - name: Run Scheduled Modder Health Check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python agents/ci_runner.py \
+            --event schedule \
+            --task "Daily Universal Modder knowledge base validation, publish-check audit, and agent readiness check." \
+            --mode summary-only

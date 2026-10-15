@@ -63,7 +63,22 @@ repo, they almost always want to **mod a game**, or to learn how a game was modd
   one module per CLI group, each with `register(sub)` and a docstring that doubles as `--help`.
 - **Windows tools:** `um/ps1/*.ps1` embed C# 5 (Windows PowerShell 5.1's compiler): no string
   interpolation, no `out var`, no expression-bodied members.
-- **Tests:** `uv run --with pytest pytest -q tests`. CI also runs `um kb check --index` and
+- **Tests:** `uv run --with pytest pytest -q tests` (or `python -m pytest -q tests`). CI also runs `um kb check --index` and
   `um publish check .`.
 - **Wording:** keep skills and docs agent-neutral ("the agent", not a product name) except in sections
   about one specific agent.
+
+## Antigravity & GitHub Agentic Workflows (`ronaldtbriggs-blip/universal-modder`)
+- **Repository:** `https://github.com/ronaldtbriggs-blip/universal-modder` (forked/cloned from `rehan-remade/universal-modder` and configured for Antigravity).
+- **Google Antigravity SDK Multi-Agent Modder (`agents/antigravity_orchestrator.py`):**
+  - Connects `LocalAgentConfig` with native `um` Python tools (`um_scan_installed_games`, `um_kb_search`, `um_kb_read_note`, `um_backup_saves`, `um_publish_lint`), GitHub automation tools, and two specialized subagents (`mod_offline_worker`, `mod_game_worker`).
+  - Run locally: `python agents/antigravity_orchestrator.py "Scan my installed games and plan a mod"`
+- **Autonomous GitHub Actions Workflows (`.github/workflows/`):**
+  - `agent-dispatch.yml`: On-demand modding, recon, and KB audit runner (`workflow_dispatch` with `task`, `mode`, and `game_query` inputs).
+  - `issue-pr-agent.yml`: Event-driven responder triggered by `@antigravity`, `/agent`, `/mod`, or `agent`/`mod-request` labels on Issues and PRs.
+  - `scheduled-agent.yml`: Daily autonomous KB validation and publish-check pulse.
+  - `test.yml`: Full pytest suite, CLI `--help` smoke tests, `um kb check --index`, and `um publish check .`.
+- **GitHub MCP & CLI Tooling (`tools/`):**
+  - Authentication resolves automatically from Windows Credential Manager (`tools/win_cred.py`) or `GITHUB_TOKEN`.
+  - Dispatch or inspect runs from CLI: `python tools/gh_cli.py dispatch --repo universal-modder --task "Audit KB notes"`
+

@@ -1,0 +1,58 @@
+name: "🤖 Antigravity Modder Agent Dispatch"
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Natural-language modding, recon, or KB task for the Antigravity Agent"
+        required: true
+        default: "Audit the Universal Modder toolkit, knowledge base field notes, skills, and publish-readiness, and publish a status report."
+        type: string
+      mode:
+        description: "Output delivery mode"
+        required: true
+        default: "report-issue"
+        type: choice
+        options:
+          - report-issue
+          - summary-only
+      game_query:
+        description: "Optional game or engine query to search in the Universal Modder Knowledge Base"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  run-agent:
+    name: "Execute Autonomous Modder Task"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Universal Modder Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pyyaml pillow numpy
+
+      - name: Run Antigravity CI Modder Agent
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python agents/ci_runner.py \
+            --event dispatch \
+            --task "${{ inputs.task }}" \
+            --mode "${{ inputs.mode }}" \
+            --game-query "${{ inputs.game_query }}"

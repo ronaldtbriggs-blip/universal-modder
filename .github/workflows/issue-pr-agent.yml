@@ -1,0 +1,45 @@
+name: "💬 Antigravity Modder Issue & PR Responder"
+
+on:
+  issues:
+    types: [opened, labeled]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  respond:
+    name: "Respond to @antigravity, /agent, or /mod"
+    if: >
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@antigravity') || contains(github.event.issue.body, '/agent') || contains(github.event.issue.body, '/mod') || contains(github.event.issue.labels.*.name, 'agent') || contains(github.event.issue.labels.*.name, 'mod-request'))) ||
+      (github.event_name == 'issue_comment' && github.event.comment.user.type != 'Bot' && (contains(github.event.comment.body, '@antigravity') || contains(github.event.comment.body, '/agent') || contains(github.event.comment.body, '/mod')))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Universal Modder Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pyyaml pillow numpy
+
+      - name: Execute Issue / Comment Modder Agent
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          TASK_TEXT: ${{ github.event_name == 'issue_comment' && github.event.comment.body || github.event.issue.body || github.event.issue.title }}
+        run: |
+          python agents/ci_runner.py \
+            --event issue \
+            --issue-number "$ISSUE_NUMBER" \
+            --task "$TASK_TEXT"
