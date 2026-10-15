@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <!-- ====================================================================== -->
+  <!-- CALRADIA: INTERGALACTIC — VOID-FLEET & STRIKE-WING TROOP TREE (T1-T6)  -->
+  <!-- ====================================================================== -->
+
+  <!-- TIER 1 -->
+  <NPCCharacter id="cig_void_t1_spacer" default_group="Ranged" level="6" name="{=!}Starport Void-Spacer" occupation="Soldier" is_basic_troop="true" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="40" />
+      <skill id="Riding" value="25" />
+      <skill id="OneHanded" value="35" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="25" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="55" />
+      <skill id="Throwing" value="25" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t2_armsman" />
+      <upgrade_target id="NPCCharacter.cig_void_t2_breacher" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_laser_carbine" />
+        <equipment slot="Item1" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Item2" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_void_marine_helm" />
+        <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 2 -->
+  <NPCCharacter id="cig_void_t2_armsman" default_group="Ranged" level="11" name="{=!}Navis Las-Armsman" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="65" />
+      <skill id="Riding" value="35" />
+      <skill id="OneHanded" value="55" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="35" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="90" />
+      <skill id="Throwing" value="40" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t3_plasma_gunner" />
+      <upgrade_target id="NPCCharacter.cig_void_t3_skiff_pilot" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_laser_carbine" />
+        <equipment slot="Item1" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Item2" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Item3" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_void_marine_helm" />
+        <equipment slot="Body" id="Item.cig_armor_void_marine_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="cig_void_t2_breacher" default_group="Infantry" level="11" name="{=!}Zero-G Boarding Breacher" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="75" />
+      <skill id="Riding" value="35" />
+      <skill id="OneHanded" value="80" />
+      <skill id="TwoHanded" value="65" />
+      <skill id="Polearm" value="65" />
+      <skill id="Bow" value="25" />
+      <skill id="Crossbow" value="65" />
+      <skill id="Throwing" value="45" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t3_exo_vanguard" />
+      <upgrade_target id="NPCCharacter.cig_void_t3_skiff_pilot" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Item1" id="Item.heater_shield_g" />
+        <equipment slot="Item2" id="Item.cig_wpn_arc_blaster" />
+        <equipment slot="Item3" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Head" id="Item.cig_armor_void_marine_helm" />
+        <equipment slot="Body" id="Item.cig_armor_void_marine_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 3 -->
+  <NPCCharacter id="cig_void_t3_plasma_gunner" default_group="Ranged" level="16" name="{=!}Phase-Plasma Void Marine" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="95" />
+      <skill id="Riding" value="50" />
+      <skill id="OneHanded" value="85" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Polearm" value="50" />
+      <skill id="Bow" value="40" />
+      <skill id="Crossbow" value="130" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t4_rail_sharpshooter" />
+      <upgrade_target id="NPCCharacter.cig_void_t4_void_templar" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_plasma_rifle" />
+        <equipment slot="Item1" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Item2" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Item3" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_void_marine_helm" />
+        <equipment slot="Body" id="Item.cig_armor_void_marine_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="cig_void_t3_exo_vanguard" default_group="Infantry" level="16" name="{=!}Syndicate Exo-Shock Vanguard" occupation="Soldier" culture="Culture.vlandia">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="105" />
+      <skill id="Riding" value="50" />
+      <skill id="OneHanded" value="115" />
+      <skill id="TwoHanded" value="95" />
+      <skill id="Polearm" value="95" />
+      <skill id="Bow" value="35" />
+      <skill id="Crossbow" value="95" />
+      <skill id="Throwing" value="65" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t4_void_templar" />
+      <upgrade_target id="NPCCharacter.cig_void_t4_interceptor_ace" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Item1" id="Item.heater_shield_i" />
+        <equipment slot="Item2" id="Item.cig_wpn_arc_blaster" />
+        <equipment slot="Item3" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Head" id="Item.cig_armor_exo_knight_helm" />
+        <equipment slot="Body" id="Item.cig_armor_exo_knight_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="cig_void_t3_skiff_pilot" default_group="Cavalry" level="16" name="{=!}Sublight Strike-Skiff Pilot" occupation="Soldier" culture="Culture.khuzait">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="85" />
+      <skill id="Riding" value="125" />
+      <skill id="OneHanded" value="95" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="115" />
+      <skill id="Bow" value="50" />
+      <skill id="Crossbow" value="110" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t4_interceptor_ace" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_arc_blaster" />
+        <equipment slot="Item1" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Item2" id="Item.cig_wpn_void_glaive" />
+        <equipment slot="Item3" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_void_marine_helm" />
+        <equipment slot="Body" id="Item.cig_armor_void_marine_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+        <equipment slot="Horse" id="Item.war_horse" />
+        <equipment slot="HorseHarness" id="Item.cig_armor_skiff_shielding" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 4 -->
+  <NPCCharacter id="cig_void_t4_rail_sharpshooter" default_group="Ranged" level="21" name="{=!}Gauss Rail-Sniper Specialist" occupation="Soldier" culture="Culture.vlandia">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="125" />
+      <skill id="Riding" value="70" />
+      <skill id="OneHanded" value="110" />
+      <skill id="TwoHanded" value="70" />
+      <skill id="Polearm" value="70" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="175" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t5_torpedo_devastator" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_gauss_railgun" />
+        <equipment slot="Item1" id="Item.cig_ammo_rail_slug" />
+        <equipment slot="Item2" id="Item.cig_ammo_rail_slug" />
+        <equipment slot="Item3" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_exo_knight_helm" />
+        <equipment slot="Body" id="Item.cig_armor_exo_knight_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="cig_void_t4_void_templar" default_group="Infantry" level="21" name="{=!}Aegis Void-Templar" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="135" />
+      <skill id="Riding" value="75" />
+      <skill id="OneHanded" value="155" />
+      <skill id="TwoHanded" value="135" />
+      <skill id="Polearm" value="135" />
+      <skill id="Bow" value="50" />
+      <skill id="Crossbow" value="135" />
+      <skill id="Throwing" value="95" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t5_arch_militant" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Item1" id="Item.heater_shield_k" />
+        <equipment slot="Item2" id="Item.cig_wpn_plasma_rifle" />
+        <equipment slot="Item3" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Head" id="Item.cig_armor_exo_knight_helm" />
+        <equipment slot="Body" id="Item.cig_armor_exo_knight_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="cig_void_t4_interceptor_ace" default_group="Cavalry" level="21" name="{=!}Valkyrie Interceptor Wingman" occupation="Soldier" culture="Culture.khuzait">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="110" />
+      <skill id="Riding" value="165" />
+      <skill id="OneHanded" value="135" />
+      <skill id="TwoHanded" value="90" />
+      <skill id="Polearm" value="155" />
+      <skill id="Bow" value="70" />
+      <skill id="Crossbow" value="150" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t5_gunship_lancer" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_plasma_rifle" />
+        <equipment slot="Item1" id="Item.cig_ammo_plasma_cell" />
+        <equipment slot="Item2" id="Item.cig_wpn_void_glaive" />
+        <equipment slot="Item3" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_exo_knight_helm" />
+        <equipment slot="Body" id="Item.cig_armor_exo_knight_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+        <equipment slot="Horse" id="Item.charger" />
+        <equipment slot="HorseHarness" id="Item.cig_armor_skiff_shielding" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 5 -->
+  <NPCCharacter id="cig_void_t5_torpedo_devastator" default_group="Ranged" level="26" name="{=!}Photon-Torpedo Heavy Devastator" occupation="Soldier" culture="Culture.sturgia">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="155" />
+      <skill id="Riding" value="90" />
+      <skill id="OneHanded" value="145" />
+      <skill id="TwoHanded" value="110" />
+      <skill id="Polearm" value="110" />
+      <skill id="Bow" value="80" />
+      <skill id="Crossbow" value="220" />
+      <skill id="Throwing" value="110" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t6_nova_commando" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_torpedo_launcher" />
+        <equipment slot="Item1" id="Item.cig_ammo_photon_micro" />
+        <equipment slot="Item2" id="Item.cig_ammo_photon_micro" />
+        <equipment slot="Item3" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_rogue_captain_helm" />
+        <equipment slot="Body" id="Item.cig_armor_rogue_captain_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="cig_void_t5_arch_militant" default_group="Infantry" level="26" name="{=!}Rogue Trader Arch-Militant" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="175" />
+      <skill id="Riding" value="100" />
+      <skill id="OneHanded" value="195" />
+      <skill id="TwoHanded" value="180" />
+      <skill id="Polearm" value="180" />
+      <skill id="Bow" value="75" />
+      <skill id="Crossbow" value="175" />
+      <skill id="Throwing" value="130" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t6_exo_dreadnought" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Item1" id="Item.cig_wpn_void_glaive" />
+        <equipment slot="Item2" id="Item.cig_wpn_disruptor_lance" />
+        <equipment slot="Item3" id="Item.cig_ammo_rail_slug" />
+        <equipment slot="Head" id="Item.cig_armor_rogue_captain_helm" />
+        <equipment slot="Body" id="Item.cig_armor_rogue_captain_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="cig_void_t5_gunship_lancer" default_group="Cavalry" level="26" name="{=!}Solaris Gunship Lancer" occupation="Soldier" culture="Culture.aserai">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="140" />
+      <skill id="Riding" value="210" />
+      <skill id="OneHanded" value="170" />
+      <skill id="TwoHanded" value="130" />
+      <skill id="Polearm" value="200" />
+      <skill id="Bow" value="90" />
+      <skill id="Crossbow" value="185" />
+      <skill id="Throwing" value="110" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.cig_void_t6_void_ace" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_disruptor_lance" />
+        <equipment slot="Item1" id="Item.cig_ammo_rail_slug" />
+        <equipment slot="Item2" id="Item.cig_wpn_void_glaive" />
+        <equipment slot="Item3" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_rogue_captain_helm" />
+        <equipment slot="Body" id="Item.cig_armor_rogue_captain_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+        <equipment slot="Horse" id="Item.charger" />
+        <equipment slot="HorseHarness" id="Item.cig_armor_skiff_shielding" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 6 ELITES -->
+  <NPCCharacter id="cig_void_t6_nova_commando" default_group="Ranged" level="31" name="{=!}Aurelian Nova-Lance Commando" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="210" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="190" />
+      <skill id="TwoHanded" value="150" />
+      <skill id="Polearm" value="150" />
+      <skill id="Bow" value="110" />
+      <skill id="Crossbow" value="275" />
+      <skill id="Throwing" value="150" />
+    </skills>
+    <upgrade_targets />
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_gauss_railgun" />
+        <equipment slot="Item1" id="Item.cig_ammo_photon_micro" />
+        <equipment slot="Item2" id="Item.cig_ammo_rail_slug" />
+        <equipment slot="Item3" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_rogue_captain_helm" />
+        <equipment slot="Body" id="Item.cig_armor_rogue_captain_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="cig_void_t6_exo_dreadnought" default_group="Infantry" level="31" name="{=!}Valorian Exo-Frame Juggernaut" occupation="Soldier" culture="Culture.vlandia">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="220" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="250" />
+      <skill id="TwoHanded" value="240" />
+      <skill id="Polearm" value="240" />
+      <skill id="Bow" value="100" />
+      <skill id="Crossbow" value="220" />
+      <skill id="Throwing" value="170" />
+    </skills>
+    <upgrade_targets />
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_void_glaive" />
+        <equipment slot="Item1" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Item2" id="Item.cig_wpn_torpedo_launcher" />
+        <equipment slot="Item3" id="Item.cig_ammo_photon_micro" />
+        <equipment slot="Head" id="Item.cig_armor_rogue_captain_helm" />
+        <equipment slot="Body" id="Item.cig_armor_rogue_captain_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="cig_void_t6_void_ace" default_group="Cavalry" level="31" name="{=!}Astral Void-Master Strike Ace" occupation="Soldier" culture="Culture.khuzait">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="190" />
+      <skill id="Riding" value="275" />
+      <skill id="OneHanded" value="220" />
+      <skill id="TwoHanded" value="180" />
+      <skill id="Polearm" value="255" />
+      <skill id="Bow" value="120" />
+      <skill id="Crossbow" value="245" />
+      <skill id="Throwing" value="150" />
+    </skills>
+    <upgrade_targets />
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.cig_wpn_disruptor_lance" />
+        <equipment slot="Item1" id="Item.cig_ammo_photon_micro" />
+        <equipment slot="Item2" id="Item.cig_wpn_void_glaive" />
+        <equipment slot="Item3" id="Item.cig_wpn_vibro_blade" />
+        <equipment slot="Head" id="Item.cig_armor_rogue_captain_helm" />
+        <equipment slot="Body" id="Item.cig_armor_rogue_captain_suit" />
+        <equipment slot="Cape" id="Item.cig_armor_thruster_pack" />
+        <equipment slot="Gloves" id="Item.cig_armor_power_gauntlets" />
+        <equipment slot="Leg" id="Item.cig_armor_mag_boots" />
+        <equipment slot="Horse" id="Item.charger" />
+        <equipment slot="HorseHarness" id="Item.cig_armor_skiff_shielding" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

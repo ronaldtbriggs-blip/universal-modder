@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <Name value="Calradia: Intergalactic — Void Traders, Starfleets &amp; 3D Space Combat" />
+  <Id value="CalradiaIntergalactic" />
+  <Version value="v1.5.5" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <Official value="false" />
+  <DependedModules>
+    <DependedModule Id="Native" DependentVersion="v1.5.5" Optional="false" />
+    <DependedModule Id="SandBoxCore" DependentVersion="v1.5.5" Optional="false" />
+    <DependedModule Id="Sandbox" DependentVersion="v1.5.5" Optional="false" />
+    <DependedModule Id="CustomBattle" DependentVersion="v1.5.5" Optional="false" />
+    <DependedModule Id="StoryMode" DependentVersion="v1.5.5" Optional="false" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="CalradiaIntergalactic" />
+      <DLLName value="CalradiaIntergalactic.dll" />
+      <SubModuleClassType value="CalradiaIntergalactic.CalradiaIntergalacticSubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls>
+    <XmlNode>
+      <XmlName id="Items" path="cig_sci_fi_items" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="cig_void_troops" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
+</Module>
