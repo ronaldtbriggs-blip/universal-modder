@@ -1,0 +1,2 @@
+# This file is used by Starfield to keep track of your downloaded content.
+*NoMansStarfield.esm

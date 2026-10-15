@@ -1,0 +1,2 @@
+; Manual Atmospheric Entry Trigger (use `bat land` in console at any time)
+LandOnPlanetAnimated

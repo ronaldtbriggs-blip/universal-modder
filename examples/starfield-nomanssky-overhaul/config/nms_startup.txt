@@ -1,0 +1,36 @@
+; No Man's Starfield — Automatic Startup Batch Script
+; Executed automatically on launch via sStartingConsoleCommand=bat nms_startup
+
+; 1. Enable built-in Creation Engine 2 Trijuicing shader performance booster
+ToggleTrijuice on
+
+; 2. Unlock Interplanetary Space Cruise (Pulse Drive) immediately on all saves
+SetStage 0107DCFA 100
+SetStage 010920A6 1000
+
+; 3. Enforce No Man's Sky 150km Atmospheric Entry Envelope & Pulse-Drive Physics
+SetGS fCruiseStageNearOrbitalDistanceKM 150.0
+SetGS fCruiseStageNearOrbitalDistanceToOrbitalKM 150.0
+SetGS fCruisePOIArrivalThresholdKM 150.0
+SetGS fCruiseStageNearPlanetDistanceKM 12000.0
+SetGS fCruiseStageNearPlanetDistanceToOrbitalKM 12000.0
+SetGS fMinSpaceCruiseOrbitalTimeToReachSeconds 6.0
+SetGS fMaxSpaceCruiseOrbitalTimeToReachSeconds 14.0
+SetGS fCruisePlanetAndMoonAccelerationMult 950000.0
+SetGS fCruiseMaxNearPlanetAccelerationMult 250000.0
+SetGS fCruiseMaxNearOrbitalAccelerationMult 35000.0
+SetGS fCruiseCelestialMagnetismDeflectionMult 0.0
+SetGS fCruisePlanetMagnetismDeflectionOrbitAltitudeMult 0.01
+SetGS fCruiseMoonMagnetismDeflectionOrbitAltitudeMult 0.01
+SetGS fCruiseMagnetismSpeedClampMult 0.90
+
+; 4. No Man's Sky Analysis Visor, Procedural Worlds, Jetpack & Base Building
+SetGS fHandScannerScanRange 75.0
+SetGS iHandScannerPlantsCountBase 3
+SetGS iHandScannerAnimalCountBase 3
+SetGS fPlanetContentMaxNewWorldspacesPerScan 10.0
+SetGS fSpaceshipMaxDockingDistance 2500.0
+SetGS fJumpHeightMin 2.25
+SetGS fSprintOxygenDrainMult 2.5
+SetGS fJumpFallDistanceToDamageMult 0.20
+SetGS fWorkshopBuildHeight 300.0

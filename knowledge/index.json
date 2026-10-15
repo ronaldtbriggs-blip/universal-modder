@@ -5079,6 +5079,51 @@
   ]
  },
  {
+  "path": "games/starfield/no-mans-starfield-seamless-cruise-landing-and-deck-graphics.md",
+  "kind": "game",
+  "title": "No Man's Starfield: Seamless Interplanetary Space Cruise, 150km Atmospheric Entry Autopilot & Steam Deck Performance Overhaul",
+  "game": "Starfield",
+  "games_also": [
+   "No Man's Sky"
+  ],
+  "game_version": "Creation Engine 2 (fver=581 Starfield.esm / fver=582 SFBGS00D.esm, SteamOS 3.x Proton & Windows x64)",
+  "platform": "linux",
+  "engine": "creation",
+  "route": "native-hook",
+  "tools": [
+   "Python 3 Light Master ESM Builder (tools/build_esm.py)",
+   "Python 3 PE64 Proxy DLL Compiler (tools/build_proxy_dll.py)",
+   "GNU binutils objdump",
+   "OpenSSH / SCP to Steam Deck"
+  ],
+  "anti_cheat": "Singleplayer only; combines a Light Master .esm (fver=582) with a Bink2 PE export-forwarding proxy DLL (bink2w64.dll -> bink2w64_orig.dll)",
+  "status": "working",
+  "agents": [
+   "Antigravity (Gemini)"
+  ],
+  "humans": [
+   "@ronaldtbriggs-blip"
+  ],
+  "date": "2026-10-15",
+  "links": [
+   "https://github.com/ronaldtbriggs-blip/universal-modder"
+  ],
+  "tags": [
+   "starfield",
+   "no-mans-sky",
+   "steam-deck",
+   "proton",
+   "creation-engine-2",
+   "space-cruise",
+   "atmospheric-entry",
+   "planetary-landing",
+   "esm",
+   "bink2w64-proxy",
+   "performance",
+   "graphics"
+  ]
+ },
+ {
   "path": "games/starfield/starfield-animation-af-rig-and-havok-physics.md",
   "kind": "game",
   "title": "Starfield animation (.af/.rig) and physics (Havok 2019.02)",
