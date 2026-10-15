@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <!-- ====================================================================== -->
+  <!-- CUSTOM CLAN ARMY TROOP TREE (TIERS 1 TO 6 - POINT-BUDGET ARCHITECT)    -->
+  <!-- ====================================================================== -->
+
+  <!-- TIER 1 (Level 6 | Base Point Budget: 100 pts) -->
+  <NPCCharacter id="sdo_clan_t1_recruit" default_group="Infantry" level="6" name="{=!}Clan Levy Recruit" occupation="Soldier" is_basic_troop="true" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="25" />
+      <skill id="Riding" value="10" />
+      <skill id="OneHanded" value="25" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="25" />
+      <skill id="Bow" value="15" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="15" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t2_infantry" />
+      <upgrade_target id="NPCCharacter.sdo_clan_t2_ranged" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_sword_1_t2" />
+        <equipment slot="Item1" id="Item.battered_kite_shield" />
+        <equipment slot="Head" id="Item.leather_cap" />
+        <equipment slot="Body" id="Item.tunic_with_shoulder_pads" />
+        <equipment slot="Leg" id="Item.empire_horseman_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t1" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 2 (Level 11 | Base Point Budget: 160 pts) -->
+  <NPCCharacter id="sdo_clan_t2_infantry" default_group="Infantry" level="11" name="{=!}Clan Footman" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="50" />
+      <skill id="Riding" value="25" />
+      <skill id="OneHanded" value="55" />
+      <skill id="TwoHanded" value="35" />
+      <skill id="Polearm" value="50" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="35" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t3_infantry" />
+      <upgrade_target id="NPCCharacter.sdo_clan_t3_cavalry" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_sword_1_t2" />
+        <equipment slot="Item1" id="Item.battered_kite_shield" />
+        <equipment slot="Item2" id="Item.western_spear_2_t2" />
+        <equipment slot="Head" id="Item.arming_coif" />
+        <equipment slot="Body" id="Item.empire_warrior_padded_armor_a" />
+        <equipment slot="Gloves" id="Item.buttoned_leather_bracers" />
+        <equipment slot="Leg" id="Item.empire_horseman_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="sdo_clan_t2_ranged" default_group="Ranged" level="11" name="{=!}Clan Skirmisher" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="50" />
+      <skill id="Riding" value="15" />
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="25" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="45" />
+      <skill id="Throwing" value="35" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t3_ranged" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.hunting_bow" />
+        <equipment slot="Item1" id="Item.default_arrows" />
+        <equipment slot="Item2" id="Item.default_arrows" />
+        <equipment slot="Item3" id="Item.empire_sword_1_t2" />
+        <equipment slot="Head" id="Item.imperial_padded_coif" />
+        <equipment slot="Body" id="Item.empire_warrior_padded_armor_a" />
+        <equipment slot="Gloves" id="Item.buttoned_leather_bracers" />
+        <equipment slot="Leg" id="Item.empire_horseman_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 3 (Level 16 | Base Point Budget: 240 pts) -->
+  <NPCCharacter id="sdo_clan_t3_infantry" default_group="Infantry" level="16" name="{=!}Clan Shieldbearer" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="30" />
+      <skill id="OneHanded" value="90" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="85" />
+      <skill id="Bow" value="25" />
+      <skill id="Crossbow" value="25" />
+      <skill id="Throwing" value="65" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t4_infantry" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_sword_2_t3" />
+        <equipment slot="Item1" id="Item.studded_bound_kite_shield" />
+        <equipment slot="Item2" id="Item.western_javelin_1_t2" />
+        <equipment slot="Head" id="Item.open_padded_coif" />
+        <equipment slot="Cape" id="Item.empire_warrior_padded_armor_shoulder" />
+        <equipment slot="Body" id="Item.empire_warrior_padded_armor_g" />
+        <equipment slot="Gloves" id="Item.padded_mitten" />
+        <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="sdo_clan_t3_ranged" default_group="Ranged" level="16" name="{=!}Clan Marksman" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="25" />
+      <skill id="OneHanded" value="65" />
+      <skill id="TwoHanded" value="35" />
+      <skill id="Polearm" value="35" />
+      <skill id="Bow" value="100" />
+      <skill id="Crossbow" value="70" />
+      <skill id="Throwing" value="45" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t4_ranged" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.steppe_war_bow" />
+        <equipment slot="Item1" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item2" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item3" id="Item.empire_sword_2_t3" />
+        <equipment slot="Head" id="Item.roundkettle_over_imperial_cloth" />
+        <equipment slot="Cape" id="Item.empire_warrior_padded_armor_shoulder" />
+        <equipment slot="Body" id="Item.empire_warrior_padded_armor_g" />
+        <equipment slot="Gloves" id="Item.padded_mitten" />
+        <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="sdo_clan_t3_cavalry" default_group="Cavalry" level="16" name="{=!}Clan Outrider" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="55" />
+      <skill id="Riding" value="95" />
+      <skill id="OneHanded" value="85" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="95" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="25" />
+      <skill id="Throwing" value="50" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t4_cavalry" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.western_spear_3_t3" />
+        <equipment slot="Item1" id="Item.light_horsemans_kite_shield" />
+        <equipment slot="Item2" id="Item.empire_sword_2_t3" />
+        <equipment slot="Head" id="Item.roundkettle_over_imperial_cloth" />
+        <equipment slot="Cape" id="Item.studded_imperial_neckguard" />
+        <equipment slot="Body" id="Item.eastern_studded_leather" />
+        <equipment slot="Gloves" id="Item.padded_mitten" />
+        <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" equipmentType="Civilian" />
+      <equipment slot="Horse" id="Item.t2_empire_horse" />
+      <equipment slot="HorseHarness" id="Item.stripped_leather_harness" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 4 (Level 21 | Base Point Budget: 340 pts) -->
+  <NPCCharacter id="sdo_clan_t4_infantry" default_group="Infantry" level="21" name="{=!}Clan Heavy Vanguard" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="120" />
+      <skill id="Riding" value="45" />
+      <skill id="OneHanded" value="135" />
+      <skill id="TwoHanded" value="100" />
+      <skill id="Polearm" value="125" />
+      <skill id="Bow" value="35" />
+      <skill id="Crossbow" value="35" />
+      <skill id="Throwing" value="95" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t5_infantry" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_sword_5_t4" />
+        <equipment slot="Item1" id="Item.reinforced_kite_shield" />
+        <equipment slot="Item2" id="Item.imperial_throwing_spear_1_t4" />
+        <equipment slot="Head" id="Item.heavy_nasalhelm_over_laced_cloth" />
+        <equipment slot="Cape" id="Item.imperial_studded_strip_shoulders" />
+        <equipment slot="Body" id="Item.empire_legion_b" />
+        <equipment slot="Gloves" id="Item.reinforced_padded_mitten" />
+        <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="sdo_clan_t4_ranged" default_group="Ranged" level="21" name="{=!}Clan Sharpshooter" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="115" />
+      <skill id="Riding" value="35" />
+      <skill id="OneHanded" value="95" />
+      <skill id="TwoHanded" value="55" />
+      <skill id="Polearm" value="50" />
+      <skill id="Bow" value="145" />
+      <skill id="Crossbow" value="110" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t5_ranged" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.steppe_war_bow" />
+        <equipment slot="Item1" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item2" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item3" id="Item.empire_sword_3_t3" />
+        <equipment slot="Head" id="Item.roundkettle_over_imperial_mail" />
+        <equipment slot="Cape" id="Item.imperial_studded_strip_shoulders" />
+        <equipment slot="Body" id="Item.legionary_mail" />
+        <equipment slot="Gloves" id="Item.reinforced_padded_mitten" />
+        <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="sdo_clan_t4_cavalry" default_group="Cavalry" level="21" name="{=!}Clan Lancer" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="140" />
+      <skill id="OneHanded" value="125" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="145" />
+      <skill id="Bow" value="40" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="70" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t5_cavalry" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.western_spear_4_t4" />
+        <equipment slot="Item1" id="Item.heavy_horsemans_kite_shield" />
+        <equipment slot="Item2" id="Item.empire_sword_2_t3" />
+        <equipment slot="Head" id="Item.leatherlame_feathered_spangenhelm_over_mail" />
+        <equipment slot="Cape" id="Item.woven_leather_shoulders" />
+        <equipment slot="Body" id="Item.empire_horseman_armor" />
+        <equipment slot="Gloves" id="Item.padded_mitten" />
+        <equipment slot="Leg" id="Item.strapped_mail_chausses" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+      <equipment slot="Horse" id="Item.t2_empire_horse" />
+      <equipment slot="HorseHarness" id="Item.halfchain_barding" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 5 (Level 26 | Base Point Budget: 460 pts) -->
+  <NPCCharacter id="sdo_clan_t5_infantry" default_group="Infantry" level="26" name="{=!}Clan Ironclad" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="155" />
+      <skill id="Riding" value="65" />
+      <skill id="OneHanded" value="180" />
+      <skill id="TwoHanded" value="145" />
+      <skill id="Polearm" value="170" />
+      <skill id="Bow" value="45" />
+      <skill id="Crossbow" value="45" />
+      <skill id="Throwing" value="130" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t6_infantry" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_sword_5_t4" />
+        <equipment slot="Item1" id="Item.stronger_reinforced_kite_shield" />
+        <equipment slot="Item2" id="Item.imperial_throwing_spear_1_t4" />
+        <equipment slot="Item3" id="Item.imperial_throwing_spear_1_t4_2" />
+        <equipment slot="Head" id="Item.empire_helmet_with_metal_strips" />
+        <equipment slot="Cape" id="Item.varangian_bra_scale" />
+        <equipment slot="Body" id="Item.imperial_lamellar" />
+        <equipment slot="Gloves" id="Item.plated_strip_gauntlets" />
+        <equipment slot="Leg" id="Item.plated_strip_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="sdo_clan_t5_ranged" default_group="Ranged" level="26" name="{=!}Clan Master Bowman" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="150" />
+      <skill id="Riding" value="55" />
+      <skill id="OneHanded" value="140" />
+      <skill id="TwoHanded" value="110" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="195" />
+      <skill id="Crossbow" value="150" />
+      <skill id="Throwing" value="85" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t6_ranged" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.steppe_war_bow" />
+        <equipment slot="Item1" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item2" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item3" id="Item.empire_sword_5_t4" />
+        <equipment slot="Head" id="Item.imperial_goggled_helmet" />
+        <equipment slot="Cape" id="Item.varangian_bra_scale" />
+        <equipment slot="Body" id="Item.imperial_lamellar" />
+        <equipment slot="Gloves" id="Item.plated_strip_gauntlets" />
+        <equipment slot="Leg" id="Item.plated_strip_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="sdo_clan_t5_cavalry" default_group="Cavalry" level="26" name="{=!}Clan Cataphract" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="100" />
+      <skill id="Riding" value="185" />
+      <skill id="OneHanded" value="175" />
+      <skill id="TwoHanded" value="95" />
+      <skill id="Polearm" value="200" />
+      <skill id="Bow" value="55" />
+      <skill id="Crossbow" value="45" />
+      <skill id="Throwing" value="90" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sdo_clan_t6_cavalry" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_lance_2_t4" />
+        <equipment slot="Item1" id="Item.heavy_horsemans_kite_shield" />
+        <equipment slot="Item2" id="Item.empire_sword_5_t4" />
+        <equipment slot="Head" id="Item.imperial_goggled_helmet" />
+        <equipment slot="Cape" id="Item.varangian_bra_scale" />
+        <equipment slot="Body" id="Item.imperial_lamellar" />
+        <equipment slot="Gloves" id="Item.lordly_padded_mitten" />
+        <equipment slot="Leg" id="Item.lamellar_plate_boots" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+      <equipment slot="Horse" id="Item.t3_empire_horse" />
+      <equipment slot="HorseHarness" id="Item.imperial_scale_barding" />
+    </Equipments>
+  </NPCCharacter>
+
+  <!-- TIER 6 (Level 31 | Base Point Budget: 600 pts - Wearing Masterwork Forged Armor!) -->
+  <NPCCharacter id="sdo_clan_t6_infantry" default_group="Infantry" level="31" name="{=!}Clan Immortal Guard" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire_veteran" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="200" />
+      <skill id="Riding" value="90" />
+      <skill id="OneHanded" value="230" />
+      <skill id="TwoHanded" value="200" />
+      <skill id="Polearm" value="220" />
+      <skill id="Bow" value="65" />
+      <skill id="Crossbow" value="65" />
+      <skill id="Throwing" value="180" />
+    </skills>
+    <upgrade_targets></upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_sword_5_t4" />
+        <equipment slot="Item1" id="Item.fortified_kite_shield" />
+        <equipment slot="Item2" id="Item.imperial_throwing_spear_1_t4" />
+        <equipment slot="Item3" id="Item.imperial_throwing_spear_1_t4_2" />
+        <equipment slot="Head" id="Item.sdo_forged_head_empire" />
+        <equipment slot="Cape" id="Item.sdo_forged_cape_empire" />
+        <equipment slot="Body" id="Item.sdo_forged_body_empire" />
+        <equipment slot="Gloves" id="Item.sdo_forged_hand_empire" />
+        <equipment slot="Leg" id="Item.sdo_forged_leg_empire" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="sdo_clan_t6_ranged" default_group="Ranged" level="31" name="{=!}Clan Eagle-Eye Sentinel" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire_veteran" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="190" />
+      <skill id="Riding" value="80" />
+      <skill id="OneHanded" value="185" />
+      <skill id="TwoHanded" value="175" />
+      <skill id="Polearm" value="110" />
+      <skill id="Bow" value="250" />
+      <skill id="Crossbow" value="200" />
+      <skill id="Throwing" value="110" />
+    </skills>
+    <upgrade_targets></upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.steppe_war_bow" />
+        <equipment slot="Item1" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item2" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item3" id="Item.empire_sword_5_t4" />
+        <equipment slot="Head" id="Item.sdo_forged_head_battania" />
+        <equipment slot="Cape" id="Item.sdo_forged_cape_empire" />
+        <equipment slot="Body" id="Item.sdo_forged_body_battania" />
+        <equipment slot="Gloves" id="Item.sdo_forged_hand_empire" />
+        <equipment slot="Leg" id="Item.sdo_forged_leg_empire" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter id="sdo_clan_t6_cavalry" default_group="Cavalry" level="31" name="{=!}Clan Royal Cataphract" occupation="Soldier" culture="Culture.empire">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire_veteran" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="230" />
+      <skill id="OneHanded" value="220" />
+      <skill id="TwoHanded" value="140" />
+      <skill id="Polearm" value="255" />
+      <skill id="Bow" value="75" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="110" />
+    </skills>
+    <upgrade_targets></upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_lance_2_t4" />
+        <equipment slot="Item1" id="Item.fortified_kite_shield" />
+        <equipment slot="Item2" id="Item.empire_sword_5_t4" />
+        <equipment slot="Head" id="Item.sdo_forged_head_empire" />
+        <equipment slot="Cape" id="Item.sdo_forged_cape_empire" />
+        <equipment slot="Body" id="Item.sdo_forged_body_empire" />
+        <equipment slot="Gloves" id="Item.sdo_forged_hand_empire" />
+        <equipment slot="Leg" id="Item.sdo_forged_leg_empire" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
+      <equipment slot="Horse" id="Item.t3_empire_horse" />
+      <equipment slot="HorseHarness" id="Item.sdo_forged_harness_empire" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

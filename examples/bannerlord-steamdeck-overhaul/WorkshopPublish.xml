@@ -1,0 +1,18 @@
+<Tasks>
+  <CreateItem />
+  <UpdateItem>
+    <ModuleFolder Value="%USERPROFILE%\Documents\Bannerlord-SteamDeckOverhaul\Module\SteamDeckOverhaul" />
+    <ItemDescription Value="Calradia Deck Overhaul: Master Armorer &amp; Clan Warband (SteamDeckOverhaul) — A comprehensive standalone overhaul engineered for Steam Deck (SteamOS/Proton) and PC on Bannerlord v1.5.5+. Includes: (1) Master Armorer's 4-Part Modular Armor Smithing Forge, Armor Smelting into Ingots &amp; Field Reforging using real 3D cultural skinned meshes; (2) Point-Based Tier 1-6 Custom Clan Army Architect (15 custom clan troop templates with dynamic point budgets for combat proficiencies, weapons, mounts, and player-forged custom armors); (3) Calradia Diplomatic Courier (remote noble/companion conversations), Mobile Smithing Stamina recovery, Smart Fief Auto-Garrison &amp; Loyalty Manager, and Tactical Battle Overhaul (Two-Handed/Polearm Cleave, Battle Adrenaline Kill-Heal, and Clan Warhorn Rally)." />
+    <ChangeNotes Value="v1.5.5.0 Initial Release: Full Bannerlord v1.5.5 compatibility, Steam Deck Proton ModVerifier fix, 4-Part Armor Smithing Forge, Tier 1-6 Point-Based Clan Army Architect, and Campaign/Combat Overhaul Hub." />
+    <Tags>
+      <Tag Value="Overhaul" />
+      <Tag Value="GameMode" />
+      <Tag Value="Singleplayer" />
+      <Tag Value="User Interface" />
+      <Tag Value="Equipment" />
+      <Tag Value="Troops" />
+    </Tags>
+    <Image Value="%USERPROFILE%\Documents\Bannerlord-SteamDeckOverhaul\Preview.png" />
+    <Visibility Value="Public" />
+  </UpdateItem>
+</Tasks>

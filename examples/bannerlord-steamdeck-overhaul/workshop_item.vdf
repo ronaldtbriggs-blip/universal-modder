@@ -1,0 +1,11 @@
+"workshopitem"
+{
+	"appid"		"261550"
+	"publishedfileid"		"0"
+	"contentfolder"		"%USERPROFILE%\\Documents\\Bannerlord-SteamDeckOverhaul\\Module\\SteamDeckOverhaul"
+	"previewfile"		"%USERPROFILE%\\Documents\\Bannerlord-SteamDeckOverhaul\\Preview.png"
+	"visibility"		"0"
+	"title"		"Calradia Deck Overhaul: Master Armorer & Clan Warband"
+	"description"		"A comprehensive standalone overhaul for Mount & Blade II: Bannerlord (v1.5.5+) engineered for Steam Deck (SteamOS/Proton) and PC.\n\n[h2]Key Features[/h2]\n[list]\n[*] [b]Master Armorer's 4-Part Modular Armor Smithing Forge[/b]: Forge custom Head, Body, Arm, Leg, and Cape armors across all 6 Calradian cultures using 4 modular stages (3D Cultural Skinned Mesh Chassis, Metallurgy Ingot Tier, Inner Padding/Lining, and Quench/Tempering + Custom Naming), smelt looted armors into Smithing ingots, and reforge equipped armor.\n[*] [b]Point-Based Tier 1-6 Custom Clan Army Architect[/b]: Design your own 15-unit branching Clan Troop Tree across Tiers 1-6 with dynamic point budgets (100 to 600 base points + Clan Tier & Leadership bonuses) spent on combat proficiencies and equipment loadouts (including equipping your custom-forged armors onto your clan troops!).\n[*] [b]Calradia Deck Overhaul Hub & Tactical Combat Overhaul[/b]: Diplomatic Courier (remote conversations with any noble or companion), Mobile Smithing Stamina recovery while traveling, Smart Fief Auto-Garrison & Loyalty/Security Manager, Two-Handed/Polearm Cleave, Battle Adrenaline Kill-Heal, and Clan Warhorn Rally.\n[*] [b]Steam Deck / Proton Native Ready[/b]: Controller/D-pad friendly menus, zero fragile external dependencies, and includes the Proton ModVerifier fix.\n[/list]"
+	"changenote"		"v1.5.5.0: Initial release for Bannerlord v1.5.5+ (Steam Deck & PC)."
+}

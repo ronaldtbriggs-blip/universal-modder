@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- ====================================================================== -->
+  <!-- MASTER ARMORER'S FORGE: SIGNATURE & CUSTOMIZABLE FORGED ARMOR CATALOG  -->
+  <!-- Uses verified Bannerlord v1.5.5 skinned MetaMeshes across all 6 slots  -->
+  <!-- ====================================================================== -->
+
+  <!-- 1. IMPERIAL THAMASKENE FORGED SET -->
+  <Item id="sdo_forged_head_empire" name="{=!}Thamaskene Imperial Guard Helm" mesh="imperial_helmet" culture="Culture.empire" weight="3.4" appearance="3.0" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="58" has_gender_variations="false" hair_cover_type="all" beard_cover_type="all" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_forged_cape_empire" name="{=!}Thamaskene Imperial Varangian Pauldrons" mesh="varangian_bra_scale" culture="Culture.empire" weight="2.2" appearance="3.0" Type="Cape">
+    <ItemComponent>
+      <Armor body_armor="18" arm_armor="12" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_forged_body_empire" name="{=!}Thamaskene Imperial Cataphract Cuirass" mesh="imperial_lamellar_b" culture="Culture.empire" weight="14.5" appearance="3.5" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="62" leg_armor="24" arm_armor="20" has_gender_variations="true" covers_body="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_forged_hand_empire" name="{=!}Thamaskene Imperial Lamellar Gauntlets" mesh="imperial_gauntlets" culture="Culture.empire" weight="1.5" appearance="3.0" Type="HandArmor">
+    <ItemComponent>
+      <Armor arm_armor="27" covers_hands="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_forged_leg_empire" name="{=!}Thamaskene Imperial Plated Greaves" mesh="empire_plated_boots" culture="Culture.empire" weight="2.4" appearance="3.0" Type="LegArmor">
+    <ItemComponent>
+      <Armor leg_armor="26" covers_legs="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_forged_harness_empire" name="{=!}Thamaskene Imperial Scale Barding" mesh="horse_harness_imperial_b_clotest" culture="Culture.empire" subtype="body_armor" weight="38.0" difficulty="0" appearance="3.5" Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="80" mane_cover_type="all" family_type="1" reins_mesh="horse_harness_imperial_b_rein" material_type="Chainmail" />
+    </ItemComponent>
+  </Item>
+
+  <!-- 2. VLANDIAN ROYAL KNIGHT FORGED SET -->
+  <Item id="sdo_forged_head_vlandia" name="{=!}Forged Vlandian Great Visored Bascinet" mesh="vlandia_helmet_m_a" culture="Culture.vlandia" weight="3.6" appearance="3.0" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="57" has_gender_variations="false" hair_cover_type="all" beard_cover_type="type4" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_forged_cape_vlandia" name="{=!}Forged Vlandian Knightly Pauldrons" mesh="pauldron_over_scale_armor" culture="Culture.vlandia" weight="2.5" appearance="3.0" Type="Cape">
+    <ItemComponent>
+      <Armor body_armor="18" arm_armor="14" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_forged_body_vlandia" name="{=!}Forged Vlandian Chivalric Plate Coat" mesh="sturgian_fortified_armor" culture="Culture.vlandia" weight="15.0" appearance="3.5" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="58" leg_armor="22" arm_armor="22" has_gender_variations="false" covers_body="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_forged_hand_vlandia" name="{=!}Forged Vlandian Lordly Mail Mittens" mesh="mail_mitten_a" culture="Culture.vlandia" weight="1.6" appearance="3.0" Type="HandArmor">
+    <ItemComponent>
+      <Armor arm_armor="27" covers_hands="true" modifier_group="chain" material_type="Chainmail" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_forged_leg_vlandia" name="{=!}Forged Vlandian Strapped Mail Chausses" mesh="mail_chausses_b" culture="Culture.vlandia" weight="2.6" appearance="3.0" Type="LegArmor">
+    <ItemComponent>
+      <Armor leg_armor="26" covers_legs="true" modifier_group="chain" material_type="Chainmail" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_forged_harness_vlandia" name="{=!}Forged Vlandian Destrier Chain Barding" mesh="horse_harness_vlandia_a_clotest" culture="Culture.vlandia" subtype="body_armor" weight="36.0" difficulty="0" appearance="3.5" Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="72" mane_cover_type="all" tail_cover_type="all" reins_mesh="horse_harness_vlandia_a_rein" family_type="1" material_type="Chainmail" />
+    </ItemComponent>
+  </Item>
+
+  <!-- 3. STURGIAN, BATTANIAN, KHUZAIT & ASERAI MASTERWORK FORGED ARMORS -->
+  <Item id="sdo_forged_head_sturgia" name="{=!}Forged Sturgian Knyaz War Helm" mesh="sturgia_helmet_e" culture="Culture.sturgia" weight="3.5" appearance="3.0" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="60" has_gender_variations="false" hair_cover_type="all" beard_cover_type="all" modifier_group="chain" material_type="Chainmail" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_forged_body_sturgia" name="{=!}Forged Sturgian Huscarl Heavy Hauberk" mesh="sturgian_chainmale_longsleeve" culture="Culture.sturgia" weight="14.0" appearance="3.5" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="50" leg_armor="28" arm_armor="28" has_gender_variations="true" covers_body="true" modifier_group="chain" material_type="Chainmail" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_forged_head_battania" name="{=!}Forged Battanian High King Warlord Helm" mesh="battania_lord_helmet_b" culture="Culture.battania" weight="3.2" appearance="3.0" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="57" has_gender_variations="false" hair_cover_type="all" beard_cover_type="type2" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_forged_body_battania" name="{=!}Forged Battanian Fian Champion Brigandine" mesh="battania_noble_armor" culture="Culture.battania" weight="12.5" appearance="3.5" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="54" leg_armor="25" arm_armor="16" has_gender_variations="true" covers_body="true" modifier_group="chain" material_type="Chainmail" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_forged_head_khuzait" name="{=!}Forged Khuzait Khanate Masked War Helm" mesh="khuzait_helmet_f" culture="Culture.khuzait" weight="3.3" appearance="3.0" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="56" has_gender_variations="false" hair_cover_type="all" beard_cover_type="all" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_forged_body_khuzait" name="{=!}Forged Khuzait Darkhan Heavy Lamellar" mesh="khuzait_heavy_armor" culture="Culture.khuzait" weight="13.8" appearance="3.5" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="52" leg_armor="28" arm_armor="25" has_gender_variations="true" covers_body="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_forged_head_aserai" name="{=!}Forged Aserai Sultanate Closed Mail Helm" mesh="aserai_helmet_k" culture="Culture.aserai" weight="3.2" appearance="3.0" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="56" has_gender_variations="false" hair_cover_type="all" beard_cover_type="all" modifier_group="chain" material_type="Chainmail" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_forged_cape_aserai" name="{=!}Forged Aserai Golden Scale Pauldrons" mesh="aserai_scale_b_shoulder" culture="Culture.aserai" weight="2.1" appearance="3.0" Type="Cape">
+    <ItemComponent>
+      <Armor body_armor="17" arm_armor="13" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+
+  <!-- 4. SAVE-PERSISTENT CUSTOM FORGE SLOTS (DYNAMICALLY RECONFIGURED AT THE FORGE) -->
+  <Item id="sdo_custom_forged_head_1" name="{=!}Custom Forged Warlord Helmet I" mesh="imperial_helmet" culture="Culture.empire" weight="3.0" appearance="3.0" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="54" has_gender_variations="false" hair_cover_type="all" beard_cover_type="all" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_custom_forged_head_2" name="{=!}Custom Forged Warlord Helmet II" mesh="vlandia_helmet_m_a" culture="Culture.vlandia" weight="3.1" appearance="3.0" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="55" has_gender_variations="false" hair_cover_type="all" beard_cover_type="type4" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_custom_forged_cape_1" name="{=!}Custom Forged Pauldrons I" mesh="pauldron_over_scale_armor" culture="Culture.empire" weight="2.0" appearance="3.0" Type="Cape">
+    <ItemComponent>
+      <Armor body_armor="16" arm_armor="12" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_custom_forged_cape_2" name="{=!}Custom Forged Pauldrons II" mesh="battania_warlord_pauldrons" culture="Culture.battania" weight="1.9" appearance="3.0" Type="Cape">
+    <ItemComponent>
+      <Armor body_armor="14" arm_armor="14" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_custom_forged_body_1" name="{=!}Custom Forged Masterwork Cuirass I" mesh="imperial_lamellar_b" culture="Culture.empire" weight="13.5" appearance="3.5" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="60" leg_armor="22" arm_armor="18" has_gender_variations="true" covers_body="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_custom_forged_body_2" name="{=!}Custom Forged Masterwork Cuirass II" mesh="khuzait_heavy_armor" culture="Culture.khuzait" weight="13.2" appearance="3.5" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="54" leg_armor="26" arm_armor="24" has_gender_variations="true" covers_body="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+  <Item id="sdo_custom_forged_hand_1" name="{=!}Custom Forged Gauntlets I" mesh="imperial_gauntlets" culture="Culture.empire" weight="1.4" appearance="3.0" Type="HandArmor">
+    <ItemComponent>
+      <Armor arm_armor="26" covers_hands="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_custom_forged_hand_2" name="{=!}Custom Forged Gauntlets II" mesh="battania_warlord_bracers" culture="Culture.battania" weight="1.3" appearance="3.0" Type="HandArmor">
+    <ItemComponent>
+      <Armor arm_armor="26" covers_hands="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_custom_forged_leg_1" name="{=!}Custom Forged Greaves I" mesh="empire_plated_boots" culture="Culture.empire" weight="2.2" appearance="3.0" Type="LegArmor">
+    <ItemComponent>
+      <Armor leg_armor="25" covers_legs="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_custom_forged_leg_2" name="{=!}Custom Forged Greaves II" mesh="battania_warlord_boots" culture="Culture.battania" weight="2.1" appearance="3.0" Type="LegArmor">
+    <ItemComponent>
+      <Armor leg_armor="27" covers_legs="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_custom_forged_harness_1" name="{=!}Custom Forged Warhorse Barding I" mesh="horse_harness_imperial_b_clotest" culture="Culture.empire" subtype="body_armor" weight="35.0" difficulty="0" appearance="3.5" Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="76" mane_cover_type="all" family_type="1" reins_mesh="horse_harness_imperial_b_rein" material_type="Chainmail" />
+    </ItemComponent>
+  </Item>
+  <Item id="sdo_custom_forged_harness_2" name="{=!}Custom Forged Warhorse Barding II" mesh="horse_harness_aserai_c_clotest" culture="Culture.aserai" subtype="body_armor" weight="34.0" difficulty="0" appearance="3.5" Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="72" mane_cover_type="all" family_type="1" reins_mesh="horse_harness_aserai_c_rein" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+</Items>

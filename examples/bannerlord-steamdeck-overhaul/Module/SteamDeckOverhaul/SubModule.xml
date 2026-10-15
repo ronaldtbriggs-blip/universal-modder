@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <Name value="Calradia Deck Overhaul: Master Armorer &amp; Clan Warband" />
+  <Id value="SteamDeckOverhaul" />
+  <Version value="v1.5.5" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <Official value="false" />
+  <DependedModules>
+    <DependedModule Id="Native" DependentVersion="v1.5.5" Optional="false" />
+    <DependedModule Id="SandBoxCore" DependentVersion="v1.5.5" Optional="false" />
+    <DependedModule Id="Sandbox" DependentVersion="v1.5.5" Optional="false" />
+    <DependedModule Id="CustomBattle" DependentVersion="v1.5.5" Optional="false" />
+    <DependedModule Id="StoryMode" DependentVersion="v1.5.5" Optional="false" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="SteamDeckOverhaul" />
+      <DLLName value="SteamDeckOverhaul.dll" />
+      <SubModuleClassType value="SteamDeckOverhaul.SteamDeckOverhaulSubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls>
+    <XmlNode>
+      <XmlName id="Items" path="sdo_armors" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="sdo_clan_troops" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
+</Module>
