@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- ====================================================================== -->
+  <!-- CALRADIA: INTERGALACTIC — SCI-FI ENERGY WEAPONS, MUNITIONS & ARMORS   -->
+  <!-- ====================================================================== -->
+
+  <!-- 1. RANGED SCI-FI ENERGY & BALLISTIC WEAPONS (PEW-PEW BLASTER / RAILGUNS) -->
+  <Item id="cig_wpn_plasma_rifle" name="{=!}Phase-Plasma Pulse Rifle Mk.IV" body_name="bo_cross_bow_heavy" mesh="crossbow_a" culture="Culture.empire" value="4800" weight="2.2" appearance="2.5" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.02131, 0.24650" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
+    <ItemComponent>
+      <Weapon weapon_class="Crossbow" ammo_class="Bolt" missile_speed="140" accuracy="96" thrust_damage="115" thrust_speed="98" speed_rating="95" weapon_length="90" ammo_limit="6" thrust_damage_type="Pierce" item_usage="crossbow_light" reload_phase_count="1" physics_material="metal_weapon" center_of_mass="0,0,0.4" modifier_group="crossbow">
+        <WeaponFlags RangedWeapon="true" HasString="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" CanBeUsedWhileCrouched="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags Stealth="true" />
+  </Item>
+
+  <Item id="cig_wpn_laser_carbine" name="{=!}Aurelian Sol-Pattern Las-Carbine" body_name="bo_cross_bow_heavy" mesh="crossbow_a" culture="Culture.empire" value="3600" weight="1.8" appearance="2.2" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.02131, 0.24650" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
+    <ItemComponent>
+      <Weapon weapon_class="Crossbow" ammo_class="Bolt" missile_speed="165" accuracy="99" thrust_damage="92" thrust_speed="110" speed_rating="105" weapon_length="82" ammo_limit="10" thrust_damage_type="Pierce" item_usage="crossbow_light" reload_phase_count="1" physics_material="metal_weapon" center_of_mass="0,0,0.4" modifier_group="crossbow">
+        <WeaponFlags RangedWeapon="true" HasString="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" CanBeUsedWhileCrouched="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags Stealth="true" />
+  </Item>
+
+  <Item id="cig_wpn_gauss_railgun" name="{=!}Valorian Hyper-Velocity Gauss Rail-Cannon" body_name="bo_cross_bow_heavy" mesh="crossbow_a" culture="Culture.vlandia" value="7500" weight="3.4" appearance="3.0" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.02131, 0.24650" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
+    <ItemComponent>
+      <Weapon weapon_class="Crossbow" ammo_class="Bolt" missile_speed="195" accuracy="100" thrust_damage="175" thrust_speed="88" speed_rating="85" weapon_length="105" ammo_limit="3" thrust_damage_type="Pierce" item_usage="crossbow_light" reload_phase_count="1" physics_material="metal_weapon" center_of_mass="0,0,0.4" modifier_group="crossbow">
+        <WeaponFlags RangedWeapon="true" HasString="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" CanBeUsedWhileCrouched="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags Stealth="true" />
+  </Item>
+
+  <Item id="cig_wpn_arc_blaster" name="{=!}Void-Syndicate Arc Repeater" body_name="bo_cross_bow_heavy" mesh="crossbow_a" culture="Culture.khuzait" value="4400" weight="2.0" appearance="2.5" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.02131, 0.24650" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
+    <ItemComponent>
+      <Weapon weapon_class="Crossbow" ammo_class="Bolt" missile_speed="135" accuracy="94" thrust_damage="102" thrust_speed="105" speed_rating="102" weapon_length="85" ammo_limit="8" thrust_damage_type="Pierce" item_usage="crossbow_light" reload_phase_count="1" physics_material="metal_weapon" center_of_mass="0,0,0.4" modifier_group="crossbow">
+        <WeaponFlags RangedWeapon="true" HasString="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" CanBeUsedWhileCrouched="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags Stealth="true" />
+  </Item>
+
+  <Item id="cig_wpn_torpedo_launcher" name="{=!}Micro-Photon Torpedo Launcher" body_name="bo_cross_bow_heavy" mesh="crossbow_a" culture="Culture.sturgia" value="9800" weight="4.2" appearance="3.5" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.02131, 0.24650" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
+    <ItemComponent>
+      <Weapon weapon_class="Crossbow" ammo_class="Bolt" missile_speed="115" accuracy="93" thrust_damage="235" thrust_speed="80" speed_rating="78" weapon_length="110" ammo_limit="2" thrust_damage_type="Blunt" item_usage="crossbow_light" reload_phase_count="1" physics_material="metal_weapon" center_of_mass="0,0,0.4" modifier_group="crossbow">
+        <WeaponFlags RangedWeapon="true" HasString="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" CanBeUsedWhileCrouched="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags Stealth="true" />
+  </Item>
+
+  <Item id="cig_wpn_disruptor_lance" name="{=!}Sylvan Tachyon Disruptor Lance" body_name="bo_cross_bow_heavy" mesh="crossbow_a" culture="Culture.battania" value="6800" weight="2.4" appearance="3.0" difficulty="0" Type="Crossbow" AmmoOffset="0.0, 0.02131, 0.24650" item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2" holster_position_shift="0.02,0,-0.4">
+    <ItemComponent>
+      <Weapon weapon_class="Crossbow" ammo_class="Bolt" missile_speed="185" accuracy="100" thrust_damage="145" thrust_speed="96" speed_rating="96" weapon_length="98" ammo_limit="5" thrust_damage_type="Pierce" item_usage="crossbow_light" reload_phase_count="1" physics_material="metal_weapon" center_of_mass="0,0,0.4" modifier_group="crossbow">
+        <WeaponFlags RangedWeapon="true" HasString="true" NotUsableWithOneHand="true" TwoHandIdleOnMount="true" CanBeUsedWhileCrouched="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags Stealth="true" />
+  </Item>
+
+  <!-- 2. ENERGY CELLS, RAIL SLUGS & MICRO-PHOTON MUNITIONS -->
+  <Item id="cig_ammo_plasma_cell" name="{=!}Overcharged Plasma Magazine (60x)" body_name="bo_capsule_arrow" holster_body_name="bo_axe_short" mesh="bolt_bl_a" holster_mesh="bolt_bl_a_quiver" flying_mesh="bolt_bl_flying" holster_mesh_with_weapon="bolt_bl_a_quiver" value="950" weight="0.4" appearance="2.0" Type="Bolts" item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+    <ItemComponent>
+      <Weapon weapon_class="Bolt" stack_amount="60" thrust_speed="0" thrust_damage="26" thrust_damage_type="Pierce" speed_rating="0" missile_speed="20" weapon_length="47" item_usage="" passby_sound_code="event:/mission/combat/missile/passby" rotation="180, 0, 0" physics_material="missile" sticking_position="0,-0.47,0" sticking_rotation="90,0,0" center_of_mass="0,0,-0.1" modifier_group="bolt">
+        <WeaponFlags AttachAmmoToVisual="true" Consumable="true" AmmoSticksWhenShot="true" AmmoBreaksOnBounceBack="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags ForceAttachOffHandPrimaryItemBone="true" Stealth="true" />
+  </Item>
+
+  <Item id="cig_ammo_rail_slug" name="{=!}Depleted-Deuterium Rail Slugs (45x)" body_name="bo_capsule_arrow" holster_body_name="bo_axe_short" mesh="bolt_bl_e" holster_mesh="bolt_bl_e_quiver" flying_mesh="bolt_bl_flying" holster_mesh_with_weapon="bolt_bl_e_quiver" value="1450" weight="0.5" appearance="2.5" Type="Bolts" item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+    <ItemComponent>
+      <Weapon weapon_class="Bolt" stack_amount="45" thrust_speed="0" thrust_damage="42" thrust_damage_type="Pierce" speed_rating="0" missile_speed="25" weapon_length="47" item_usage="" passby_sound_code="event:/mission/combat/missile/passby" rotation="180, 0, 0" physics_material="missile" sticking_position="0,-0.47,0" sticking_rotation="90,0,0" center_of_mass="0,0,-0.1" modifier_group="bolt">
+        <WeaponFlags AttachAmmoToVisual="true" Consumable="true" AmmoSticksWhenShot="true" AmmoBreaksOnBounceBack="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags ForceAttachOffHandPrimaryItemBone="true" Stealth="true" />
+  </Item>
+
+  <Item id="cig_ammo_photon_micro" name="{=!}Micro-Photon Warhead Pack (30x)" body_name="bo_capsule_arrow" holster_body_name="bo_axe_short" mesh="bolt_bl_c" holster_mesh="bolt_bl_c_quiver" flying_mesh="bolt_bl_flying" holster_mesh_with_weapon="bolt_bl_c_quiver" value="2400" weight="0.6" appearance="3.0" Type="Bolts" item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+    <ItemComponent>
+      <Weapon weapon_class="Bolt" stack_amount="30" thrust_speed="0" thrust_damage="68" thrust_damage_type="Blunt" speed_rating="0" missile_speed="18" weapon_length="47" item_usage="" passby_sound_code="event:/mission/combat/missile/passby" rotation="180, 0, 0" physics_material="missile" sticking_position="0,-0.47,0" sticking_rotation="90,0,0" center_of_mass="0,0,-0.1" modifier_group="bolt">
+        <WeaponFlags AttachAmmoToVisual="true" Consumable="true" AmmoSticksWhenShot="true" AmmoBreaksOnBounceBack="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags ForceAttachOffHandPrimaryItemBone="true" Stealth="true" />
+  </Item>
+
+  <!-- 3. SCI-FI MELEE VIBRO-SABERS & PLASMA GLAIVES -->
+  <Item id="cig_wpn_vibro_blade" name="{=!}Rogue Trader Vibro-Phase Saber" body_name="bo_mace_a" recalculate_body="true" mesh="torch_g" prefab="torch_a_wm_only_flame" culture="Culture.empire" value="4200" weight="1.1" appearance="3.0" Type="OneHandedWeapon" item_holsters="sword_left_hip">
+    <ItemComponent>
+      <Weapon weapon_class="OneHandedSword" weapon_balance="100" thrust_speed="98" speed_rating="108" physics_material="metal_weapon" missile_speed="0" weapon_length="102" thrust_damage="88" thrust_damage_type="Pierce" swing_damage="106" swing_damage_type="Cut" item_usage="onehanded_block_shield_swing">
+        <WeaponFlags MeleeWeapon="true" />
+      </Weapon>
+    </ItemComponent>
+  </Item>
+
+  <Item id="cig_wpn_void_glaive" name="{=!}Omnissian Plasma Force-Glaive" body_name="bo_push_fork" recalculate_body="true" mesh="push_fork" subtype="two_handed_wpn" culture="Culture.khuzait" value="5800" weight="2.2" difficulty="0" appearance="3.0" Type="Polearm" item_holsters="polearm_back:polearm_back_2">
+    <ItemComponent>
+      <Weapon weapon_class="TwoHandedPolearm" weapon_balance="100" thrust_speed="92" speed_rating="96" physics_material="metal_weapon" weapon_length="195" swing_damage="138" thrust_damage="112" swing_damage_type="Cut" thrust_damage_type="Pierce" item_usage="polearm_block_thrust">
+        <WeaponFlags MeleeWeapon="true" WideGrip="true" TwoHandIdleOnMount="true" />
+      </Weapon>
+    </ItemComponent>
+  </Item>
+
+  <!-- 4. INTERGALACTIC VOID-POWER ARMORS, VACC-HELMS & THRUSTER PACKS -->
+  <Item id="cig_armor_void_marine_helm" name="{=!}Navis Void-Marine Sealed Vacc-Helm" mesh="imperial_helmet" culture="Culture.empire" value="6500" weight="2.8" appearance="3.5" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="74" has_gender_variations="false" hair_cover_type="all" beard_cover_type="all" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+
+  <Item id="cig_armor_void_marine_suit" name="{=!}Aurelian Mk.VII Void-Power Carapace" mesh="imperial_lamellar_b" culture="Culture.empire" value="14500" weight="11.0" appearance="4.0" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="86" leg_armor="46" arm_armor="44" has_gender_variations="true" covers_body="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+
+  <Item id="cig_armor_exo_knight_helm" name="{=!}Valorian Drop-Shock Exo-Visor" mesh="vlandia_helmet_m_a" culture="Culture.vlandia" value="7200" weight="3.0" appearance="3.5" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="80" has_gender_variations="false" hair_cover_type="all" beard_cover_type="type4" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+
+  <Item id="cig_armor_exo_knight_suit" name="{=!}Valorian Heavy Exo-Frame Plate" mesh="coat_of_plates_over_mail" culture="Culture.vlandia" value="16800" weight="12.5" appearance="4.0" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="94" leg_armor="52" arm_armor="50" has_gender_variations="true" covers_body="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+
+  <Item id="cig_armor_rogue_captain_helm" name="{=!}Lord Captain's Archeotech Halo-Crown" mesh="sturgia_helmet_b" culture="Culture.sturgia" value="9500" weight="2.5" appearance="4.5" Type="HeadArmor">
+    <ItemComponent>
+      <Armor head_armor="86" has_gender_variations="false" hair_cover_type="type3" beard_cover_type="type3" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+
+  <Item id="cig_armor_rogue_captain_suit" name="{=!}Warrant-of-Trade Void-Mantle &amp; Aegis Cuirass" mesh="khuzait_lamellar_strapped" culture="Culture.khuzait" value="22000" weight="10.5" appearance="5.0" Type="BodyArmor">
+    <ItemComponent>
+      <Armor body_armor="98" leg_armor="58" arm_armor="56" has_gender_variations="true" covers_body="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+
+  <Item id="cig_armor_thruster_pack" name="{=!}Zero-G Grav-Thruster &amp; Void-Shield Pack" mesh="varangian_bra_scale" culture="Culture.empire" value="8400" weight="1.8" appearance="4.0" Type="Cape">
+    <ItemComponent>
+      <Armor body_armor="38" arm_armor="28" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+
+  <Item id="cig_armor_mag_boots" name="{=!}Mag-Lock Zero-G Grav-Greaves" mesh="empire_plated_boots" culture="Culture.empire" value="4900" weight="1.9" appearance="3.5" Type="LegArmor">
+    <ItemComponent>
+      <Armor leg_armor="56" covers_legs="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+
+  <Item id="cig_armor_power_gauntlets" name="{=!}Plasma-Conduit Servo-Gauntlets" mesh="imperial_gauntlets" culture="Culture.empire" value="5200" weight="1.4" appearance="3.5" Type="HandArmor">
+    <ItemComponent>
+      <Armor arm_armor="58" covers_hands="true" modifier_group="plate" material_type="Plate" />
+    </ItemComponent>
+  </Item>
+
+  <Item id="cig_armor_skiff_shielding" name="{=!}Strike-Skiff Deflector Hull Plating" mesh="horse_harness_imperial_b_clotest" culture="Culture.empire" value="9000" subtype="body_armor" weight="20.0" difficulty="0" appearance="4.0" Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="95" mane_cover_type="all" family_type="1" reins_mesh="horse_harness_imperial_b_rein" material_type="Chainmail" />
+    </ItemComponent>
+  </Item>
+
+  <!-- 5. INTERSTELLAR STAR-TRADER COMMODITIES & VOID CARGO -->
+  <Item id="cig_good_promethium" name="{=!}Promethium Warp-Fuel Cells{@Plural}crates of Promethium Warp-Fuel Cells{\@}" mesh="amphora_slim" item_category="oil" value="340" weight="6" Type="Goods">
+    <Flags Civilian="true" />
+  </Item>
+
+  <Item id="cig_good_spice_melange" name="{=!}Hyper-Spice Melange{@Plural}canisters of Hyper-Spice Melange{\@}" mesh="spice_sack" item_category="velvet" value="720" weight="4" Type="Goods">
+    <Flags Civilian="true" />
+  </Item>
+
+  <Item id="cig_good_quantum_cores" name="{=!}Quantum Logic Processors{@Plural}arrays of Quantum Logic Processors{\@}" mesh="silver_ore" item_category="silver" value="540" weight="5" Type="Goods">
+    <Flags Civilian="true" />
+  </Item>
+
+  <Item id="cig_good_xeno_relics" name="{=!}Xeno-Archeotech Shards{@Plural}vaults of Xeno-Archeotech Shards{\@}" mesh="bd_sturgia_statue" item_category="jewelry" value="980" weight="3" Type="Goods">
+    <Flags Civilian="true" />
+  </Item>
+
+  <Item id="cig_good_durasteel" name="{=!}Refined Durasteel Hull Plates{@Plural}bales of Refined Durasteel Hull Plates{\@}" mesh="crate_a" item_category="clay" value="210" weight="8" Type="Goods">
+    <Flags Civilian="true" />
+  </Item>
+
+  <Item id="cig_good_cryo_medgel" name="{=!}Zero-G Cryo-Med Vitae Gel{@Plural}packs of Zero-G Cryo-Med Vitae Gel{\@}" mesh="bd_barrel_a" item_category="wine" value="280" weight="5" Type="Goods">
+    <Flags Civilian="true" />
+  </Item>
+</Items>

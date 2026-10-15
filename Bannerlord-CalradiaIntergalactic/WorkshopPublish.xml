@@ -1,0 +1,18 @@
+<Tasks>
+  <CreateItem />
+  <UpdateItem>
+    <ModuleFolder Value="Z:\home\deck\.local\share\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\CalradiaIntergalactic" />
+    <ItemDescription Value="Calradia: Intergalactic — Void Traders, Starfleets &amp; 3D Space Combat (CalradiaIntergalactic) — A sci-fi Total Conversion mod for Mount &amp; Blade II: Bannerlord (v1.5.5+, Steam Deck &amp; PC) fusing Starfield, No Man's Sky, Stellaris, Star Traders: Frontiers, and Warhammer 40k: Rogue Trader. Features: (1) Galactic Astrography grouping Towns as Star System Capitals/Starports, Castles as Orbital Starbases, and Bound Villages as Minor Colony Moons; (2) 3D Directional Zero-G Space Battles with 6-DOF look-vector flight thrusters, PEW-PEW 3D Plasma/Laser/Railgun bolts, WHHHAAAAM Photon Torpedo plasma shockwaves, recharging Void-Shields, and overhead 3D Capital Voidships exchanging orbital broadsides; (3) Modular Voidship Designer with 7 Hull Classes, S-Class Archeotech Drydock upgrades, Starfield Reactor Power Pip routing, and Star Traders Range-Band 5-to-1 ship combat; (4) Walkable 3D Flagship Bridge with a rotating 3D Holographic Starmap &amp; Warp Reactor Core." />
+    <ChangeNotes Value="v1.5.5.0 Initial Release: Complete Sci-Fi Total Conversion with Star System &amp; Colony Moon astrography, 3D Zero-G directional space battles, PEW-PEW plasma bolts &amp; WHHHAAAAM torpedo shockwaves, 7-hull Voidship Designer + Range-Band 5-to-1 combat, and Walkable 3D Flagship Bridge." />
+    <Tags>
+      <Tag Value="Total Conversion" />
+      <Tag Value="Overhaul" />
+      <Tag Value="Sci-Fi" />
+      <Tag Value="Singleplayer" />
+      <Tag Value="Equipment" />
+      <Tag Value="Troops" />
+    </Tags>
+    <Image Value="Z:\home\deck\.local\share\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\CalradiaIntergalactic\Preview.png" />
+    <Visibility Value="Public" />
+  </UpdateItem>
+</Tasks>
