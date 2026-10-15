@@ -14,12 +14,13 @@ humans: ["@ronaldtbriggs-blip"]
 date: 2026-10-15
 links:
   - https://github.com/ronaldtbriggs-blip/universal-modder
+  - https://steamcommunity.com/sharedfiles/filedetails/?id=3820120183
 tags: [bannerlord, steam-deck, proton, steamos, modverifier, armor-smithing, custom-troops, clan-army, point-system, overhaul, csharp-submodule, moduledata, workshop]
 ---
 
 # Steam Deck Overhaul (v1.5.5): Proton ModVerifier Fix, 4-Part Armor Smithing Forge & Point-Based Custom Clan Armies
 
-This field note documents two root causes that break *Mount & Blade II: Bannerlord* Steam Workshop C# mods on the **Steam Deck (`SteamOS 3.x` / `Proton 11.0`)**, and details the architecture of **`SteamDeckOverhaul`** (*Calradia Deck Overhaul: Master Armorer & Clan Warband*), a standalone `v1.5.5` overhaul module combining:
+This field note documents two root causes that break *Mount & Blade II: Bannerlord* Steam Workshop C# mods on the **Steam Deck (`SteamOS 3.x` / `Proton 11.0`)**, and details the architecture of **`SteamDeckOverhaul`** (*Calradia Deck Overhaul: Master Armorer & Clan Warband*, published to Steam Workshop at [`id=3820120183`](https://steamcommunity.com/sharedfiles/filedetails/?id=3820120183)), a standalone `v1.5.5` overhaul module combining:
 1. A drop-in `bin/ModVerifier/ModVerifier.exe` fix for the Bannerlord Launcher on Proton.
 2. A **4-Part Modular Armor Smithing Forge** (`ArmorSmithingBehavior`) integrated with `DefaultSkills.Crafting`, crafting stamina, and smelting ingots (`ironIngot1..6`, `charcoal`) using verified `v1.5.5` 3D cultural skinned meshes and save-safe runtime `ItemObject` / `ArmorComponent` backing-field mutation.
 3. A **Point-Based Tier 1–6 Custom Clan Army Architect** (`ClanArmyPointSystemBehavior`) with 15 branching custom troop templates (`sdo_clan_t1_recruit` through `sdo_clan_t6_cavalry`), dynamic point budgets (`100` to `600` base points + Clan Tier & Leadership bonuses), custom skill proficiency allocation, and custom equipment loadouts (including equipping player-forged custom armors onto clan troops).
@@ -75,6 +76,7 @@ where $\text{BaseTierBudget} = \{100, 160, 240, 340, 460, 600\}$ for Tiers 1–6
 - **Static & ABI Verification**: Ran a `Mono.Cecil` type/member reference verifier across `SteamDeckOverhaul.dll` (`72,704 bytes`) against the Steam Deck's `v1.5.5.109536` `TaleWorlds.*.dll` assemblies: **0 missing types, 0 missing members** (compared to 34+ missing references in legacy `v1.2.17` `TroopDesigner.dll`).
 - **ModVerifier Verification**: Executed `ModVerifier.exe` against `SteamDeckOverhaul.dll` and confirmed valid `ResultData` XML serialization matching `LauncherModsDLLManager.GetDLLVerifyReport`.
 - **Steam Deck Deployment**: Deployed `bin/ModVerifier/ModVerifier.exe`, `Modules/SteamDeckOverhaul/`, and updated `LauncherData.xml` (167 verified DLLs) to the Steam Deck over SSH.
+- **Steam Workshop Live Upload**: Patched `TaleWorlds.MountAndBlade.SteamWorkshop.exe` with `Mono.Cecil` (`SteamWorkshop_CLI.exe`) to remove `Console.WriteLine` and `Console.ReadKey` calls that throw under headless Wine/Proton, inherited the active Steam client's environment (`DISPLAY`, `XAUTHORITY`, `XDG_RUNTIME_DIR`), and published directly from the Steam Deck (`Item created. Item ID is 3820120183`, `236,357 / 236,357 bytes`, `Uploading done!`).
 - **Publishing Lint**: Verified with `python -m um publish check` (`PASS: 0 failures, 0 warnings`) and `python -m um kb check`.
 
 ---
